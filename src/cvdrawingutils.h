@@ -45,6 +45,6 @@ class ARUCO_EXPORTS CvDrawingUtils {
 //    static void draw3dAxis(cv::Mat &Image, MarkerMap &m, const CameraParameters &CP);
 //    static void draw3dCube(cv::Mat &Image, MarkerMap &m, const CameraParameters &CP, bool setYperpendicular = false);
 };
-};
+}
 
 #endif

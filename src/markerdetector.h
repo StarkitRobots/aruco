@@ -428,5 +428,5 @@ public:
 
     vector<cv::Mat > imagePyramid;
 };
-};
+}
 #endif

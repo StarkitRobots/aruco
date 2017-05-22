@@ -86,6 +86,6 @@ public:
     virtual ~MarkerLabeler(){}
 
 };
-};
+}
 #endif
 
