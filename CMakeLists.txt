@@ -25,7 +25,7 @@ OPTION(BUILD_GLSAMPLES 	"Set to OFF to build static libraries" OFF)
 #   Find Dependencies
 # ----------------------------------------------------------------------------
 
-find_package(catkin REQUIRED COMPONENTS urdfdom_headers console_bridge)
+find_package(catkin REQUIRED COMPONENTS Eigen)
 
 FIND_PACKAGE(OpenCV REQUIRED)
 set (ARUCO_REQUIRED_LIBRARIES ${OpenCV_LIBS})
