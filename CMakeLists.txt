@@ -25,7 +25,7 @@ OPTION(BUILD_GLSAMPLES 	"Set to OFF to build static libraries" OFF)
 #   Find Dependencies
 # ----------------------------------------------------------------------------
 
-find_package(catkin REQUIRED COMPONENTS Eigen)
+find_package(catkin REQUIRED COMPONENTS eigen)
 
 FIND_PACKAGE(OpenCV REQUIRED)
 set (ARUCO_REQUIRED_LIBRARIES ${OpenCV_LIBS})
@@ -35,7 +35,7 @@ INCLUDE_DIRECTORIES(${OpenCV_INCLUDE_DIRS})
 catkin_package(
   INCLUDE_DIRS src
   LIBRARIES aruco
-  CATKIN_DEPENDS Eigen
+  CATKIN_DEPENDS eigen
 )
 
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
