@@ -146,6 +146,12 @@ information on how to run the examples.
 
 */
 
+#pragma GCC diagnostic push
+// Aruco contains way too much deprecated stuff in c++11
+#pragma GCC diagnostic ignored "-Wdeprecated"
+
 #include "markerdetector.h"
 #include "posetracker.h"
 #include "cvdrawingutils.h"
+
+#pragma GCC diagnostic pop
