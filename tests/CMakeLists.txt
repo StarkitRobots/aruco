@@ -1,7 +1,7 @@
 INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/src ${GNULIBS_INCLUDE_DIR})
 LINK_LIBRARIES(${PROJECT_NAME} ${REQUIRED_LIBRARIES} )
-set_source_files_properties(create_artag_hrm_dict.cpp PROPERTIES COMPILE_FLAGS -std=c++11)
-set_source_files_properties(create_aruco_dict.cpp PROPERTIES COMPILE_FLAGS -std=c++11)
+set_source_files_properties(create_artag_hrm_dict.cpp PROPERTIES COMPILE_FLAGS -std=c++17)
+set_source_files_properties(create_aruco_dict.cpp PROPERTIES COMPILE_FLAGS -std=c++17)
 
 ADD_EXECUTABLE(create_artag_hrm_dict create_artag_hrm_dict.cpp)
 ADD_EXECUTABLE(create_aruco_dict create_aruco_dict.cpp )

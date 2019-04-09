@@ -38,7 +38,7 @@ catkin_package(
   CATKIN_DEPENDS eigen
 )
 
-set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wno-deprecated")
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -Wno-deprecated")
 
 #Enabling OpenMP
 find_package(OpenMP  )
@@ -159,7 +159,7 @@ endif()
 #    message( STATUS "GNU COMPILER")
 #    MESSAGE( STATUS "-------------------------------------------------------------------------------" )
 #
-#    SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${EXTRA_C_FLAGS} -std=c++11")
+#    SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${EXTRA_C_FLAGS} -std=c++17")
 #    SET(CMAKE_CXX_FLAGS_RELEASE "${EXTRA_C_FLAGS_RELEASE}")
 #    SET(CMAKE_CXX_FLAGS_DEBUG "${EXTRA_C_FLAGS_DEBUG}")
 #    SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${EXTRA_EXE_LINKER_FLAGS}")
