@@ -38,7 +38,7 @@ catkin_package(
   CATKIN_DEPENDS eigen
 )
 
-set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -Wno-deprecated")
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wno-deprecated")
 
 #Enabling OpenMP
 find_package(OpenMP  )
